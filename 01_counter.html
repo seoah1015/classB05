@@ -10,7 +10,30 @@
 		
 		<script>
 			$(function(){
+				var intervalVar;
+				var countNum = 0;
+
+			// 시작버튼이벤트
+				$(".btn_start").click(function(){
+					clearInterval(intervalVar);
+					intervalVar = setInterval(function(){
+						countNum++;
+						$('.txt_Number').text(countNum);
+					},1000);
+				})
+
+				//스톱버튼이벤트 
+				$(".btn_stop").click(function(){
+					clearInterval(intervalVar);
+				})
 				
+				//리셋버튼이벤트
+				$(".btn_reset").click(function(){
+					clearInterval(intervalVar);
+					countNum = 0;
+					$('.txt_Number').text(countNum);
+				})
+
 			})
 		</script>
 

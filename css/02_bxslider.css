@@ -20,6 +20,24 @@
 	background:url(../images/visual_01.jpg) no-repeat center center;
 	height:720px;
 }
+.section.visual .unit.unit_02{
+	background:url(../images/visual_02.jpg) no-repeat center center;
+	height:720px;
+}
+.section.visual .unit.unit_03{
+	background:url(../images/visual_03.jpg) no-repeat center center;
+	height:720px;
+}
+
+.section.visual .bx-wrapper{
+	box-shadow: none;
+	border:0;
+}
+
+.section.visual .bx-wrapper .bx-pager{
+
+}
+
 .section.visual .unit > p{
 	text-align:center;
 	color:#fff;
@@ -30,6 +48,31 @@
 
 .section.box{
 	padding:0 10px;
+}
+.section.box:after{
+	clear: both;
+	display: block;
+	content: '';
+}
+
+/* .section.box .unit{
+	float: left;
+	width: 33.3%;
+} */
+.section.box .unit .img{
+	width: 100%;
+}
+.section.box .unit .name{
+font-size: 20px;
+text-align: center;
+font-weight: bold;
+}
+
+	
+.section.box .bx-wrapper{
+	box-shadow: none;
+	border:0;
+	background: none;
 }
 
 .footer{

@@ -12,15 +12,28 @@
 		
 		<script>
 			$(function(){
-			
+				$("#fullpage").fullpage({
+					navigation:true,
+					sectionsColor:["#999","#4bbfc3","#666", "#7baabe"],
+					navigationPosition:"left",
+					navigationTooltips:["1st", "2nd", "3rd", "4th"],
+					shoeActiveTooltips:true
+				});
 			})
 		</script>
 		<style>
-			
+			.section{
+				text-align: center; font-size: 50px; font-weight: bold; color:aliceblue; text-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+			}		
 		</style>
 
   </head>
   <body>
-    
+    <div id="fullpage">
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
+	</div>
   </body>
 </html>
